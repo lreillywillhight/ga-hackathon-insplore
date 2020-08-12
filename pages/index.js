@@ -10,11 +10,15 @@ export default function Home() {
     <div>
       <Title />
       <div>
+        {console.log(process.env.GREETING)}
+        <h1>INSPLORE </h1>
+      </div>
+      <div>
         <footer>
           <ul>
             <li>
               <Link href="/maps/mapboxViewWorld">
-                Select a city (PLACEHOLDER)...
+                <a title="PLACEHOLDER_SELECT_A_CITY">Select a city (PLACEHOLDER)...</a>
               </Link>
             </li>
           </ul>
