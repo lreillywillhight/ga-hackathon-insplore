@@ -14,8 +14,8 @@ export default function Home() {
         <footer>
           <ul>
             <li>
-              <Link href="/mapboxViewWorld">
-                Select a city...
+              <Link href="/maps/mapboxViewWorld">
+                Select a city (PLACEHOLDER)...
               </Link>
             </li>
           </ul>
