@@ -10,9 +10,6 @@ export default function Home() {
     <div>
       <Title />
       <div>
-        <button >
-          Maps
-        </button>
         <footer>
           <ul>
             <li>
