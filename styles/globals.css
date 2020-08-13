@@ -579,19 +579,12 @@ width: 180px;
 }
 
 
-/*
-@media screen and (max-width: 1920px){}
-@media screen and (max-width: 1680px){}
-*/
-@media screen and (max-width: 1400px){
+
+/* @media screen and (max-width: 1400px){
   #Stage, .title {
-/*  left: 250px !important;*/
   }
-}
-/*
-@media screen and (max-width: 1200px){}
-@media screen and (max-width: 1024px){}
-*/
+} */
+
 
 
 @keyframes textureSpin {
@@ -648,3 +641,8 @@ width: 180px;
   max-width: 400px;
   font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
   }
+h3 {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: rgb(77, 53, 230)
+}
