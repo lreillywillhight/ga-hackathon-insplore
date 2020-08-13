@@ -776,6 +776,11 @@ width: 180px;
   font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
+.mapboxgl-popup-close-button {
+  height: 0;
+  width: 0;
+}
+
 h3 {
   font-family: 'Raleway', sans-serif;
   text-align: center;
