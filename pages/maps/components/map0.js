@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Component } from 'react'
-import ReactMapGL, { Marker } from 'react-map-gl'
+import ReactMapGL, { Marker, Popup } from 'react-map-gl'
 
 
 const places = [{
@@ -10,7 +10,7 @@ const places = [{
 }, {
   name: "Basilica y Convento de San Francisco do Lima",
   lat: -12.052660,
-  lon: -77033030
+  lon: -77.033030
 }, {
   name: "Larco Museum",
   lat: -12.072400,
@@ -26,6 +26,12 @@ const places = [{
 }
 ]
 
+const setSelectedMarker = (object) => {
+  this.setState({
+    selectedMarker: object
+  });
+};
+
 
 class Map extends Component {
   state = {
@@ -35,7 +41,8 @@ class Map extends Component {
       latitude: -12.10,
       longitude: -77.06,
       zoom: 11
-    }
+    },
+    selectedMarker: {}
   };
  
   render() {
@@ -52,16 +59,15 @@ class Map extends Component {
           <div className="PlacesList">
             {
             Object.keys(places).map((p, i) => {
-              console.log(places[p].lat);
-              return <div className="MarkerDiv">
+              console.log(places[p].name);
+              return <div key={i} id={places[p].name} className="MarkerDiv" onClick={() => {this.setSelectedMarker.bind(places[p])}}>
+                {console.log(this.state.selectedMarker[p])}
                 <Marker latitude={places[p].lat} longitude={places[p].lon}>{places[p].name}</Marker>
               </div>
             })
           }
           </div>
-          {/* <Marker latitude={-12.03} longitude={-77.02}>
-          <div>You are here</div>
-        </Marker> */}
+         
         </ReactMapGL>
       </div>
     );
