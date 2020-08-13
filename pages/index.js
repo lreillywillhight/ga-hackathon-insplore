@@ -25,17 +25,6 @@ export default function Home() {
         <button onClick={() => router.push("/randomDestination")}>Randomize</button>
         <button onClick={() => router.push("/destinations")}>Destinations</button>
       </div>
-      <div>
-        <footer>
-          <ul>
-            <li>
-              <Link href="/maps/mapboxViewWorld">
-                <a title="PLACEHOLDER_SELECT_A_CITY">Select a city (PLACEHOLDER)...</a>
-              </Link>
-            </li>
-          </ul>
-        </footer>
-      </div>
     </div>
   )
 }

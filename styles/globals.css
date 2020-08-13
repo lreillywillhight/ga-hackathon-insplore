@@ -79,22 +79,27 @@ button {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  margin-bottom: 20px;
+  box-shadow: 0px 20px 70px 14px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
 }
 
 .destinationCard {
   border: .25px solid rgb(109, 109, 109);
 }
 
-.xLink {
-  margin-top: -5em;
-  /* display: flex; */
+.xDiv {
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .aX {
-  /* width: 64px; */
-  /* height: 64px; */
-  display: block;
+  /* margin-right: .5em; */
+  width: 10%;
+  margin-right: -1em;
+  padding-bottom: .8em;
 }
 
 .x {
@@ -110,10 +115,26 @@ button {
 }
 
 .destinationBtn {
-  width: 50%;
-  height: 200%;
-  margin-bottom: 0em;
-  margin-right: .25em;
+  /* margin-bottom: 0em; */
+  margin-right: 2em;
+  margin-bottom: -4.5em;
+  border-radius: 1em;
+  line-height: 1em;
+  background: #6872F1;
+  border: 0em;
+  border-radius: 100px;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  width: 163px;
+  height: 54px;
+  z-index: 10;
+  color: white;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .city {
@@ -125,7 +146,12 @@ button {
 .country {
   margin-top: -1em;
   margin-bottom: .4em;
-  margin-left: 2em;
+  margin-left: 1.25em;
+}
+
+.pics {
+  margin-top: -1.3em;
+  padding-left: 1em;
 }
 
 /* ----------- Spinning Globe ----------- */

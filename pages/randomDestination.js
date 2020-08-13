@@ -20,7 +20,6 @@ export default function Random() {
                 <button onClick={() => router.push("/randomDestination")}>Spin Again</button>
                 <button onClick={() => router.push("/destinations")}>Destinations</button>
             </div>
-            <div>This is a "random" destination </div>
         </div>
     )
 }

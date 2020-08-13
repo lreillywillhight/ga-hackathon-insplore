@@ -10,7 +10,7 @@ export default function Title() {
             <div>
                 <Link href="/">
                     <a  className="title">
-                        <img className="logo" src='logo-working-white.png'></img>
+                        <img className="logo" src='NEW_Insplore_Logo_sized.png'></img>
                     </a>
                 </Link>
             </div>
