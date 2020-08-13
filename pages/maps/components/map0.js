@@ -2,6 +2,8 @@ import * as React from 'react'
 import { Component, PureComponent } from 'react'
 import ReactMapGL, { Marker } from 'react-map-gl'
 
+const size = 30;
+const unit = 'px';
 
 class Map extends Component {
   state = {
@@ -14,6 +16,7 @@ class Map extends Component {
       
     }
   };
+
   
   render() {
     return (
@@ -27,7 +30,7 @@ class Map extends Component {
           onViewportChange={(viewport) => this.setState({ viewport })}
           {...this.state.viewport}
           >
-          <Marker latitude={-12.03} longitude={-77.02}>
+          <Marker offsetTop={"-25px"} offsetLeft={"-13px"} latitude={-12.03} longitude={-77.02}>
           <div>You are here</div>
         </Marker>
         </ReactMapGL>
