@@ -11,15 +11,15 @@ export default function Home() {
   return(
     <div className="home">
       <Head >
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,700&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"/>
         <link rel="shortcut icon" href="/favicon.ico"/>
       </Head>
       <Title />
       
       <Globe />
       <div className="homeButtons">
-        <button onClick={() => router.push("/randomDestination")}>Randomize</button>
-        <button onClick={() => router.push("/destinations")}>Destinations</button>
+        <button className="randomButton" onClick={() => router.push("/randomDestination")}>Randomize</button>
+        <button className="destinationButton" onClick={() => router.push("/destinations")}>Destinations</button>
       </div>
     </div>
   )

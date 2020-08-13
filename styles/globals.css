@@ -20,21 +20,120 @@ a {
   box-sizing: border-box;
 }
 
-button {
+/* button { */
   /* position: absolute; */
-  width: 250px;
+  /* width: 250px;
   height: 70px;
   left: 348px;
   top: 794px;
   font-family: 'Raleway', sans-serif;
+  font-style: normal; */
+  /* font-weight: bold; */
+  /* font-size: 18px; */
+  /* line-height: 21px; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* text-align: center; */
+  /* color: #000000; */
+  /* line-height: 1em;
+  background: #6872F1;
+  border: 0em;
+  border-radius: 100px;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  width: 163px;
+  height: 54px;
+  z-index: 10;
+  color: white;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold; */
+
+  /* position: relative;
+  width: 224px;
+  height: 76px;
+
+  background: #5879EF;
+  box-shadow: -5.46791px -5.46791px 16.4037px #6889FD, 5.46791px 5.46791px 16.4037px #4E66BA;
+  border-radius: 109.358px;
+  border: 0px; */
+  /* position: absolute; */
+  /* font-family: Raleway;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 21px;
-  /* display: flex; */
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
+  /* text-align: center;
+
+  color: #EEEEEE; */
+
+
+/* } */
+
+.destinationButton {
+  position: relative;
+  width: 224px;
+  height: 76px;
+
+  background: #5879EF;
+  box-shadow: -5.46791px -5.46791px 16.4037px #6889FD, 5.46791px 5.46791px 16.4037px #4E66BA;
+  border-radius: 109.358px;
+  border: 0;
+
+  /* position: absolute;
+  left: 16.07%;
+  right: 15.63%;
+  top: 30.26%;
+  bottom: 31.58%; */
+
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  /* display: flex;
+  align-items: center; */
   text-align: center;
-  color: #000000;
+
+  color: #EEEEEE;
+}
+
+.randomButton {
+  width: 224px;
+  height: 76px;
+
+
+  background: #58A0EF;
+  box-shadow: -5.46791px -5.46791px 16.4037px #54B0EF, 5.46791px 5.46791px 16.4037px #4E66BA;
+  border-radius: 109.358px;
+  border: 0;
+
+
+
+  /* Spin the Globe */
+
+
+  /* position: absolute;
+  left: 16.07%;
+  right: 15.62%;
+  top: 30.26%;
+  bottom: 31.58%; */
+
+  /* Button Text */
+
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  /* display: flex;
+  align-items: center; */
+  text-align: center;
+
+  color: #EEEEEE;
 }
 
 /* --------------- HEADER ----------------- */
@@ -121,7 +220,6 @@ button {
   /* margin-bottom: 0em; */
   margin-right: 2em;
   margin-bottom: -4.5em;
-  border-radius: 1em;
   line-height: 1em;
   background: #6872F1;
   border: 0em;
@@ -136,20 +234,19 @@ button {
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 21px;
 }
 
 .city {
   margin-top: .4em;
   margin-bottom: .4em;
-
+  font-family: 'Raleway', sans-serif;
 }
 
 .country {
   margin-top: -1em;
   margin-bottom: .4em;
   margin-left: 1.25em;
+  font-family: 'Raleway', sans-serif;
 }
 
 .pics {
@@ -188,7 +285,7 @@ button {
   margin-bottom: 16px;
   height: 200px; /* Unscaled is 200px. If 'globe__container' is scaled, multiply this value by scale() property, e.g. 200px * 0.5 = 100px */
   width:  200px; /* Unscaled is 200px. If 'globe__container' is scaled, multiply this value by scale() property, e.g. 200px * 0.5 = 100px */
-  transform: scale(1.99,1.99);
+  transform: scale(1.97,1.97);
 }
 
 .globe__container {
