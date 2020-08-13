@@ -71,6 +71,44 @@ button {
   justify-content: space-evenly;
 }
 
+/* --------------- Destination --------------- */
+.outerCard {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.destinationCard {
+  border: .25px solid rgb(109, 109, 109);
+}
+
+.cityButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1em;
+}
+
+.destinationBtn {
+  width: 50%;
+  height: 200%;
+  margin-bottom: 0em;
+  margin-right: .25em;
+}
+
+.city {
+  margin-top: .4em;
+  margin-bottom: .4em;
+
+}
+
+.country {
+  margin-top: -1em;
+  margin-bottom: .4em;
+  margin-left: 2em;
+}
 
 /* ----------- Spinning Globe ----------- */
 .globeDiv {
