@@ -3,8 +3,11 @@ import React from 'react'
 
 export default function Globe() {
 
+
     return (
+        
         <div className="globeDiv">
+    
             <div className="globe__placeholder">
                 <div className="globe__container">
                     <div className="globe">
