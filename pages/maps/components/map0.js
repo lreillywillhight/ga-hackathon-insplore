@@ -6,7 +6,8 @@ import ReactMapGL, { Marker, Popup } from 'react-map-gl'
 const places = [{
   name: "Eat and Drink",
   lat: -11.98938,
-  lon: -77.08634
+  lon: -77.08634,
+  info: "get ur grubz"
 }, {
   name: "Basilica y Convento de San Francisco do Lima",
   lat: -12.052660,
@@ -37,7 +38,7 @@ class Map extends Component {
 
   closePopup = () => {
     this.setState({
-      selectedHotspot: null
+      selectedMarker: null
     })
   }
 
@@ -72,8 +73,11 @@ class Map extends Component {
                   <Popup
                     latitude={this.state.selectedMarker.lat} 
                     longitude={this.state.selectedMarker.lon}
-                    onClose={this.closePopip}
-                    ><p>INFORMATION GOES HERE</p></Popup>
+                    onClose={this.closePopup}
+                    closeOnClick={true}
+                    anchor="bottom"
+                    offsetLeft={-88}
+                    ><p>{this.state.selectedMarker.info !== undefined ? this.state.selectedMarker.info : this.state.selectedMarker.name}</p></Popup>
                     ) : 
                     null
                     }
