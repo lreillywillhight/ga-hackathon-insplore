@@ -731,3 +731,13 @@ h3 {
   text-align: center;
   color: rgb(83, 61, 230)
 }
+
+footer {
+  position: fixed;
+  font-family: 'Raleway', sans-serif;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+}

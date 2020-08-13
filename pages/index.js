@@ -6,6 +6,7 @@ import TestCities from './maps/components/testCities.js'
 
 import Title from '../components/title'
 import Globe from '../components/globe'
+import Footer from '../components/footer'
 // import Direction from '../components/direction'
 import { useRouter } from 'next/router'
 
@@ -29,6 +30,7 @@ export default function Home() {
         <button onClick={() => router.push("/randomDestination")}>Randomize</button>
         <button onClick={() => router.push("/destinations")}>Destinations</button>
       </div>
+      <Footer />
     </div>
   )
 }

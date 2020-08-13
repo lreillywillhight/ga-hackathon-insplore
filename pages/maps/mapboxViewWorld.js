@@ -4,6 +4,8 @@ import dynamic from 'next/dynamic'
 import { useRouter } from 'next/router'
 import Title from '../../components/title'
 import MapSidebar from './components/map-sidebar'
+import Footer from '../../components/footer'
+
 
 const Map0 = dynamic(() => import('./components/map0'), {
   loading: () => <p>Loading...</p>,

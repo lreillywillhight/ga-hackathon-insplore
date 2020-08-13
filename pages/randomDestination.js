@@ -1,5 +1,7 @@
 import React from 'react'
 import Title from '../components/title'
+import Footer from '../components/footer'
+
 import Head from 'next/head'
 import Link from 'next/link'
 import Globe from '../components/globe'
@@ -20,6 +22,7 @@ export default function Random() {
                 <button onClick={() => router.push("/randomDestination")}>Spin Again</button>
                 <button onClick={() => router.push("/destinations")}>Destinations</button>
             </div>
+            <Footer />
         </div>
     )
 }

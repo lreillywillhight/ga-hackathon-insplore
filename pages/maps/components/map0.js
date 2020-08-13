@@ -34,8 +34,8 @@ const setSelectedMarker = (object) => {
 class Map extends Component {
   state = {
     viewport: {
-      width: '100vw',
-      height: '100vh',
+      width: '80vw',
+      height: '75vh',
       latitude: -12.10,
       longitude: -77.06,
       zoom: 11
