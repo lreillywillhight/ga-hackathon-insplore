@@ -809,8 +809,8 @@ footer {
 
 .mapContainer {
   position: absolute;
-  right: 30px;
-  top: 400px;
+  right: 0;
+  top: 350px;
 }
 
 /* .modal {
@@ -837,6 +837,7 @@ footer {
   left: 0;
   top: 50; */
   /* width: 45vw;
+  width: 35vw;
   z-index: 100;
   position: absolute;
   left: 0;

@@ -76,6 +76,7 @@ class Map extends Component {
           mapboxApiAccessToken={`${process.env.NEXT_PUBLIC_MAPBOX_API_KEY}`}
           onViewportChange={(viewport) => this.setState({ viewport })}
           {...this.state.viewport}
+          scrollzoom={false}
           >
           <div className="PlacesList">
             {
