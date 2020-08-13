@@ -19,18 +19,26 @@ export default function MapboxViewWorld() {
   // const [show, setShow] = useState(false);
 
   return (
-    <div>
-      <Head >
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,700&display=swap" rel="stylesheet"/>
-        <link rel="shortcut icon" href="/favicon.ico"/>
-      </Head>
-      <Title />
-      <div className="map-body">
-        <MapSidebar  />
-        <Map0/>
-      </div>
-      <Footer />
-    </div>
+    <html>
+        <head>
+          <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+          <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+        </head>
+        <div>
+          <div className="homeButton">
+            <span onClick={() => router.push('/')}>Return to home page</span>
+          </div>
+        </div>
+          <Title />
+          <div className="map-body">
+            <Map0 />
+            <MapSidebar />
+          </div>
+          <footer>
+          <div className="homeButton">
+            <span onClick={() => router.push('/')}>Return to home page</span>
+          </div>
+          </footer>
+    </html>
   )
 } 

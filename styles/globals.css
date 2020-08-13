@@ -801,6 +801,18 @@ footer {
   padding: 1em;
 }
 
+.markerDisplay {
+  display: absolute;
+  left: 0;
+  top: 300px;
+}
+
+.mapContainer {
+  position: absolute;
+  right: 30px;
+  top: 400px;
+}
+
 /* .modal {
   max-width: none;
 }
@@ -824,12 +836,18 @@ footer {
   position: absolute;
   left: 0;
   top: 50; */
-  width: 45vw;
+  /* width: 45vw;
   z-index: 100;
   position: absolute;
   left: 0;
   top: 337px;
-  background: hotpink;
+  background: hotpink; */
   /* direction: rtl; */
+  width: 35vw;
+  z-index: 100;
+  position: absolute;
+  left: 0;
+  top: 337px;
+  direction: rtl;
 
 }
