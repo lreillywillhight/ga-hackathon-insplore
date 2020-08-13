@@ -27,9 +27,7 @@ const places = [{
 ]
 
 const setSelectedMarker = (object) => {
-  this.setState({
-    selectedMarker: object
-  });
+  console.log(object)
 };
 
 
@@ -60,7 +58,7 @@ class Map extends Component {
             {
             Object.keys(places).map((p, i) => {
               console.log(places[p].name);
-              return <div key={i} id={places[p].name} className="MarkerDiv" onClick={() => {this.setSelectedMarker.bind(places[p])}}>
+              return <div key={i} id={places[p].name} className="MarkerDiv" onClick={(e) => {this.setSelectedMarker(e)}}>
                 {console.log(this.state.selectedMarker[p])}
                 <Marker latitude={places[p].lat} longitude={places[p].lon}>{places[p].name}</Marker>
               </div>
