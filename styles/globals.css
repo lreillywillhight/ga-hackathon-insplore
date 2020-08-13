@@ -20,59 +20,6 @@ a {
   box-sizing: border-box;
 }
 
-/* button { */
-  /* position: absolute; */
-  /* width: 250px;
-  height: 70px;
-  left: 348px;
-  top: 794px;
-  font-family: 'Raleway', sans-serif;
-  font-style: normal; */
-  /* font-weight: bold; */
-  /* font-size: 18px; */
-  /* line-height: 21px; */
-  /* display: flex; */
-  /* align-items: center; */
-  /* text-align: center; */
-  /* color: #000000; */
-  /* line-height: 1em;
-  background: #6872F1;
-  border: 0em;
-  border-radius: 100px;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  width: 163px;
-  height: 54px;
-  z-index: 10;
-  color: white;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold; */
-
-  /* position: relative;
-  width: 224px;
-  height: 76px;
-
-  background: #5879EF;
-  box-shadow: -5.46791px -5.46791px 16.4037px #6889FD, 5.46791px 5.46791px 16.4037px #4E66BA;
-  border-radius: 109.358px;
-  border: 0px; */
-  /* position: absolute; */
-  /* font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 21px;
-  /* display: flex;
-  align-items: center; */
-  /* text-align: center;
-
-  color: #EEEEEE; */
-
-
-/* } */
-
 .destinationButton {
   position: relative;
   width: 224px;
@@ -770,19 +717,12 @@ width: 180px;
 }
 
 
-/*
-@media screen and (max-width: 1920px){}
-@media screen and (max-width: 1680px){}
-*/
-@media screen and (max-width: 1400px){
+
+/* @media screen and (max-width: 1400px){
   #Stage, .title {
-/*  left: 250px !important;*/
   }
-}
-/*
-@media screen and (max-width: 1200px){}
-@media screen and (max-width: 1024px){}
-*/
+} */
+
 
 
 @keyframes textureSpin {
@@ -835,3 +775,12 @@ width: 180px;
   transform: rotate(-45deg);
 }
 
+.mapboxgl-popup {
+  max-width: 400px;
+  font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  }
+h3 {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: rgb(83, 61, 230)
+}

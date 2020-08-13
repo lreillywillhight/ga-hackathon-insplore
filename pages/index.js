@@ -2,7 +2,9 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Title from '../components/title'
 import Globe from '../components/globe'
+// import Direction from '../components/direction'
 import { useRouter } from 'next/router'
+
 
 export default function Home() {
   const router = useRouter()
@@ -15,7 +17,9 @@ export default function Home() {
         <link rel="shortcut icon" href="/favicon.ico"/>
       </Head>
       <Title />
-      
+        <h3 className="subheading">
+          explore from indoors
+        </h3>
       <Globe />
       <div className="homeButtons">
         <button className="randomButton" onClick={() => router.push("/randomDestination")}>Randomize</button>
