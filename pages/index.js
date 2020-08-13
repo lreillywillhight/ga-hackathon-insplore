@@ -5,6 +5,7 @@ import TestCities from './maps/components/testCities.js'
 
 
 import Title from '../components/title'
+import Globe from '../components/globe'
 import { useRouter } from 'next/router'
 
 export default function Home() {
@@ -12,15 +13,17 @@ export default function Home() {
 
 
   return(
-    <div>
-      <Title />
-      <div>
+    <div className="home">
+      <Head >
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,700&display=swap" rel="stylesheet"/>
 
-        {console.log(TestCities)}
-        <h1>INSPLORE </h1>
-        {console.log(process.env.GREETING)}
+      </Head>
+      <Title />
+      
+      <Globe />
+      <div className="homeButtons">
+        <button onClick={() => router.push("/randomDestination")}>Randomize</button>
         <button onClick={() => router.push("/destinations")}>Destinations</button>
-        <button onClick={() => router.push("/randomDestination")}>Spin the Globe</button>
       </div>
       <div>
         <footer>
