@@ -8,6 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@amcharts/amcharts4": "^4.9.35",
+    "@amcharts/amcharts4-geodata": "^4.1.17",
     "next": "9.5.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",

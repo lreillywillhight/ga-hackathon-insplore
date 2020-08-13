@@ -2,19 +2,24 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import Title from '../components/title'
+import Globe from '../components/globe'
 import { useRouter } from 'next/router'
 
 export default function Home() {
   const router = useRouter()
 
   return(
-    <div>
+    <div className="home">
+      <Head >
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,700&display=swap" rel="stylesheet"/>
+
+      </Head>
       <Title />
-      <div>
-        <h1>INSPLORE </h1>
-        {console.log(process.env.GREETING)}
+      
+      <Globe />
+      <div className="homeButtons">
+        <button onClick={() => router.push("/randomDestination")}>Randomize</button>
         <button onClick={() => router.push("/destinations")}>Destinations</button>
-        <button onClick={() => router.push("/randomDestination")}>Spin the Globe</button>
       </div>
       <div>
         <footer>
