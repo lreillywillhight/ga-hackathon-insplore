@@ -54,7 +54,9 @@ button {
 
 .logo {
   width: 30%;
-  margin: 0 auto;
+  margin: 0 auto;    
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 /* --------------- HOME ----------------- */
@@ -177,6 +179,7 @@ button {
   margin-bottom: 16px;
   height: 200px; /* Unscaled is 200px. If 'globe__container' is scaled, multiply this value by scale() property, e.g. 200px * 0.5 = 100px */
   width:  200px; /* Unscaled is 200px. If 'globe__container' is scaled, multiply this value by scale() property, e.g. 200px * 0.5 = 100px */
+  transform: scale(2,2)
 }
 
 .globe__container {
