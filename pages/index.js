@@ -1,14 +1,19 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
+import TestCities from './maps/components/testCities.js'
+// import dynamic from 'next/dynamic'
+
+
 
 export default function Home() {
+
 
 
   return(
     <div>
       <div>
-        {console.log(process.env.GREETING)}
+        {console.log(TestCities)}
         <h1>INSPLORE </h1>
       </div>
       <div>

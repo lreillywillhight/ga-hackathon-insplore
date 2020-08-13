@@ -6,20 +6,25 @@ class Map extends Component {
     viewport: {
       width: '100vw',
       height: '100vh',
-      latitude: 41.5868,
-      longitude: -93.625,
+      latitude: 48.5124,
+      longitude: 2.2108,
       zoom: 13
     }
   };
 
   render() {
     return (
-      <ReactMapGL
-        mapStyle="mapbox://styles/mapbox/streets-v9"
-        mapboxApiAccessToken="pk.eyJ1IjoibHJlaWxseXdpbGxoaWdodCIsImEiOiJja2J3aDNtdGwwMHZyMnBwa3ozcGMwdHhpIn0.4zOBrY1egrcBNbElDdxyaA"
-        onViewportChange={(viewport) => this.setState({ viewport })}
-        {...this.state.viewport}
-      />
+      <div>
+        <div>
+          {console.log(process.env.NEXT_PUBLIC_MAPBOX_API_KEY)}
+        </div>
+        <ReactMapGL
+          mapStyle="mapbox://styles/mapbox/streets-v9"
+          mapboxApiAccessToken={`${process.env.NEXT_PUBLIC_MAPBOX_API_KEY}`}
+          onViewportChange={(viewport) => this.setState({ viewport })}
+          {...this.state.viewport}
+        />
+      </div>
     );
   }
 }
