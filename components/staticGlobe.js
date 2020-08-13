@@ -8,7 +8,7 @@ export default function StaticGlobe() {
         <div className="globeDiv">
             <Link href='/maps/mapboxViewWorld'>
                 <a>
-            <img src="GLOBE STATIC PERU.png"></img>
+            <img src="NEW GLOBE STATIC_Peru_3.png"></img>
                 </a>
             </Link>
         </div>

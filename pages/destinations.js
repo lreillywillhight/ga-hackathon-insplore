@@ -21,10 +21,18 @@ export default function Home() {
         </Head>
         <Title />
         
-        <Globe />
+        {/* <Globe /> */}
         <div>
 
-            <Card className="outerCard" style={{ height:'25rem'}}>
+            <Card className="outerCard" style={{ height:'30rem', width: '35em'}}>
+                
+                <Button variant="light">XO</Button>
+                
+                <Link className="xLink" href="/">
+                    <a  className="aX">
+                        <img className="x" src="/x.png"/>
+                    </a>
+                </Link>
                 <Card.Body >
                     <Card className="destinationCard" style={{ width:'30em' }}>
                         <ListGroup variant="flush">

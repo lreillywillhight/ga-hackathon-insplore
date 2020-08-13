@@ -5,7 +5,7 @@ export default function Title() {
     return (
         <div className='header'>
             <Head>
-                <title>Insplore</title>
+                <title>insplore</title>
             </Head>
             <div>
                 <Link href="/">

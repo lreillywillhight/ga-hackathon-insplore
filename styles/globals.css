@@ -75,12 +75,30 @@ button {
 .outerCard {
   background: white;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 .destinationCard {
   border: .25px solid rgb(109, 109, 109);
+}
+
+.xLink {
+  margin-top: -5em;
+  /* display: flex; */
+  width: 100%;
+}
+
+.aX {
+  /* width: 64px; */
+  /* height: 64px; */
+  display: block;
+}
+
+.x {
+  width: 40%;
 }
 
 .cityButton {
