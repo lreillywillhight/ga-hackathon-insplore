@@ -1,3 +1,6 @@
+
+import * as React from 'react'
+
 // city has:
 // name (String)
 // region (String)
@@ -10,27 +13,27 @@
 
 
 
-// export default {
+export default {
 
-//   TestCities: {
-//     Paris: {
-//       name: "Paris",
-//       region: "France",
-//       latitude: 48.5124,
-//       longitude: 2.2108,
-//       foodType: "Fusion",
-//       languages: ["French", "English"],
-//       attractions: [{
-//         Louvre: {
-//           type: "museum",
-//           url: "exampleURL"
-//         }}, {
-//         Citadel: {
-//           type: "religion",
-//           url: "exampleURL"
-//         }}
-//       ],
-//       transportationSystem: ["Paris Metro", "RER"]
-//     }
-//   }
-// }
+  TestCities: {
+    Paris: {
+      name: "Paris",
+      region: "France",
+      latitude: 48.5124,
+      longitude: 2.2108,
+      foodType: "Fusion",
+      languages: ["French", "English"],
+      attractions: [{
+        Louvre: {
+          type: "museum",
+          url: "exampleURL"
+        }}, {
+        Citadel: {
+          type: "religion",
+          url: "exampleURL"
+        }}
+      ],
+      transportationSystem: ["Paris Metro", "RER"]
+    }
+  }
+}
