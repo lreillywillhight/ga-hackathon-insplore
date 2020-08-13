@@ -32,7 +32,7 @@ class Map extends Component {
     viewport: {
       width: '100vw',
       height: '100vh',
-      latitude: -12.05,
+      latitude: -12.10,
       longitude: -77.06,
       zoom: 11
     }
@@ -53,7 +53,9 @@ class Map extends Component {
             {
             Object.keys(places).map((p, i) => {
               console.log(places[p].lat);
-              return <Marker latitude={places[p].lat} longitude={places[p].lon}></Marker>
+              return <div className="MarkerDiv">
+                <Marker latitude={places[p].lat} longitude={places[p].lon}>{places[p].name}</Marker>
+              </div>
             })
           }
           </div>
