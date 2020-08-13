@@ -5,12 +5,12 @@ export default function Title() {
     return (
         <div className='header'>
             <Head>
-                <title>Insplore</title>
+                <title>insplore</title>
             </Head>
             <div>
                 <Link href="/">
                     <a  className="title">
-                        <img className="logo" src='logo-working-white.png'></img>
+                        <img className="logo" src='NEW_Insplore_Logo_sized.png'></img>
                     </a>
                 </Link>
             </div>

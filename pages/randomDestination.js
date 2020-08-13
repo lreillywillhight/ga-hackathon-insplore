@@ -1,6 +1,7 @@
 import React from 'react'
 import Title from '../components/title'
 import Head from 'next/head'
+import Link from 'next/link'
 import Globe from '../components/globe'
 import StaticGlobe from '../components/staticGlobe'
 import { useRouter } from 'next/router'
@@ -17,9 +18,8 @@ export default function Random() {
             <StaticGlobe />
             <div className="randomButtons">
                 <button onClick={() => router.push("/randomDestination")}>Spin Again</button>
-                <button onClick={() => router.push("/destinations")}>See More Info</button>
+                <button onClick={() => router.push("/destinations")}>Destinations</button>
             </div>
-            <div>This is a "random" destination </div>
         </div>
     )
 }
