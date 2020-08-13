@@ -16,7 +16,7 @@ export default function Home() {
     <div className="home">
       <Head >
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,700&display=swap" rel="stylesheet"/>
-        <link rel="shortcut icon" href="favicon.ico"/>
+        <link rel="shortcut icon" href="/favicon.ico"/>
       </Head>
       <Title />
       
