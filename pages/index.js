@@ -2,9 +2,9 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import TestCities from './maps/components/testCities.js'
-// import dynamic from 'next/dynamic'
 
 
+import Title from '../components/title'
 
 export default function Home() {
 
@@ -12,6 +12,7 @@ export default function Home() {
 
   return(
     <div>
+      <Title />
       <div>
         {console.log(TestCities)}
         <h1>INSPLORE </h1>
