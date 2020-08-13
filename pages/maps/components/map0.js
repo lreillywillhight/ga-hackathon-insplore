@@ -26,12 +26,15 @@ const places = [{
 }
 ]
 
-const setSelectedMarker = (object) => {
-  console.log(object)
-};
+
 
 
 class Map extends Component {
+
+  setSelectedMarker = (object) => {
+    console.log(object)
+  };
+
   state = {
     viewport: {
       width: '100vw',
