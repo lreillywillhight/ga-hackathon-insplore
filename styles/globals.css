@@ -762,10 +762,6 @@ width: 180px;
   .container{padding-left: 0px;}
 }
 
-
-
-
-
 .mapboxgl-marker {
   margin-left: -115px;
   border-radius: 50% 50% 50% 0;
@@ -784,4 +780,37 @@ h3 {
   font-family: 'Raleway', sans-serif;
   text-align: center;
   color: rgb(83, 61, 230)
+}
+
+/* .modal {
+  max-width: none;
+}
+
+.modal-dialog {
+  max-width: none;
+}
+
+
+.sidebar-whole {
+  position: absolute;
+  left: 0;
+  top: 50;
+  z-index: 100;
+  direction: ltr;
+} */
+
+.sidebar {
+  /* width: 45vw;
+  z-index: 9;
+  position: absolute;
+  left: 0;
+  top: 50; */
+  width: 45vw;
+  z-index: 100;
+  position: absolute;
+  left: 0;
+  top: 337px;
+  background: hotpink;
+  /* direction: rtl; */
+
 }

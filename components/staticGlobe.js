@@ -6,7 +6,7 @@ export default function StaticGlobe() {
 
     return (
         <div className="staticGlobeDiv">
-            <Link href='/maps/mapboxViewWorld'>
+            <Link href='/mapboxViewWorld'>
                 <a>
                 <img src="NEW GLOBE STATIC_Peru_3.png"></img>
                 </a>
