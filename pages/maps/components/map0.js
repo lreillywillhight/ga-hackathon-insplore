@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Component, PureComponent } from 'react'
+import { Component } from 'react'
 import ReactMapGL, { Marker } from 'react-map-gl'
 
 
@@ -27,7 +27,6 @@ const places = [{
 ]
 
 
-
 class Map extends Component {
   state = {
     viewport: {
@@ -38,11 +37,7 @@ class Map extends Component {
       zoom: 11
     }
   };
-  
-
-  
-
-  
+ 
   render() {
     return (
       <div>
