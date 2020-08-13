@@ -15,11 +15,3 @@ a {
   box-sizing: border-box;
 }
 
-.mapboxgl-marker {
-  margin-left: -115px;
-  border-radius: 50% 50% 50% 0;
-  border: 10px solid #1f1b1bcc;
-  width: 25px;
-  height: 25px;
-  /* transform: rotate(-45deg); */
-}

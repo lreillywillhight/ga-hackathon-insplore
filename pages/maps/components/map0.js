@@ -2,6 +2,9 @@ import * as React from 'react'
 import { Component, PureComponent } from 'react'
 import ReactMapGL, { Marker } from 'react-map-gl'
 
+
+
+//react-map=gl is a module that I didn't have time to fiddle with converting from class library
 class Map extends Component {
   state = {
     viewport: {
@@ -26,7 +29,7 @@ class Map extends Component {
           onViewportChange={(viewport) => this.setState({ viewport })}
           {...this.state.viewport}
           >
-          <Marker latitude={-12.03} longitude={-77.02} offsetLeft={-20} offsetTop={-10}>
+          <Marker latitude={-12.03} longitude={-77.02}>
           <div>You are here</div>
         </Marker>
         </ReactMapGL>
