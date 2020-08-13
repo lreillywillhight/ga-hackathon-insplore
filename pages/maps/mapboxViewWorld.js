@@ -26,9 +26,7 @@ export default function MapboxViewWorld() {
         <Map0 />
         <MapSidebar />
       </div>
-      <footer>
-        <span onClick={() => router.push('/')}>Return to home page</span>
-      </footer>
+      <Footer />
     </div>
   )
 }

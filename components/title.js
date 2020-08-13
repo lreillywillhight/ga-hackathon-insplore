@@ -6,6 +6,7 @@ export default function Title() {
         <div className='header'>
             <Head>
                 <title>insplore</title>
+                <link rel="shortcut icon" href="/Insplore_favicon.ico"/>  
             </Head>
             <div>
                 <Link href="/">

@@ -6,7 +6,8 @@ import ReactMapGL, { Marker, Popup } from 'react-map-gl'
 const places = [{
   name: "Eat and Drink",
   lat: -11.98938,
-  lon: -77.08634
+  lon: -77.08634,
+  info: "get ur grubz"
 }, {
   name: "Basilica y Convento de San Francisco do Lima",
   lat: -12.052660,
@@ -26,12 +27,21 @@ const places = [{
 }
 ]
 
-const setSelectedMarker = (object) => {
-  console.log(object)
-};
-
 
 class Map extends Component {
+
+  setSelectedMarker = (object) => {
+    this.setState({
+      selectedMarker: object
+    })
+  };
+
+  closePopup = () => {
+    this.setState({
+      selectedMarker: null
+    })
+  }
+
   state = {
     viewport: {
       width: '80vw',
@@ -40,12 +50,12 @@ class Map extends Component {
       longitude: -77.06,
       zoom: 11
     },
-    selectedMarker: {}
+    selectedMarker: null
   };
  
   render() {
     return (
-      <div>
+      <div className="map-box">
         <div>
         </div>
         <ReactMapGL
@@ -58,9 +68,21 @@ class Map extends Component {
             {
             Object.keys(places).map((p, i) => {
               console.log(places[p].name);
-              return <div key={i} id={places[p].name} className="MarkerDiv" onClick={(e) => {this.setSelectedMarker(e)}}>
-                {console.log(this.state.selectedMarker[p])}
-                <Marker latitude={places[p].lat} longitude={places[p].lon}>{places[p].name}</Marker>
+              return <div key={i} id={places[p].name} className="MarkerDiv" onClick={(e) => {this.setSelectedMarker(places[p])}}>
+                {this.state.selectedMarker !== null ? (
+                  <Popup
+                    latitude={this.state.selectedMarker.lat} 
+                    longitude={this.state.selectedMarker.lon}
+                    closeButton={false}
+                    onClose={this.closePopup}
+                    closeOnClick={true}
+                    anchor="bottom"
+                    offsetLeft={-88}
+                    ><h3>{this.state.selectedMarker.name}</h3></Popup>
+                    ) : 
+                    null
+                    }
+                <Marker latitude={places[p].lat} longitude={places[p].lon}></Marker>
               </div>
             })
           }

@@ -17,7 +17,7 @@ export default function Home() {
         <div className="home">
             <Head >
                 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,700&display=swap" rel="stylesheet"/>
-
+                <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet"></link>
             </Head>
             <Title />
             
@@ -56,9 +56,9 @@ export default function Home() {
                                     </div>
                                     <h5 className="country">Japan</h5><br />
                                     <div>
-                                        <img className="pics" src="paris preview - 1 - eiffel.png"/>
-                                        <img className="pics" src="paris preview - 2 - louvre.png"/>
-                                        <img className="pics" src="paris preview - 3 - Crepe.png"/>
+                                        <img className="pics" src="Osaka preview - 1 - Osaka Castle.png"/>
+                                        <img className="pics" src="Osaka preview - 2 - boat.png"/>
+                                        <img className="pics" src="Osaka preview - 3 - Sushi.png"/>
                                     </div>
                                 </ListGroup.Item>
                                 <ListGroup.Item className="destinationCard">

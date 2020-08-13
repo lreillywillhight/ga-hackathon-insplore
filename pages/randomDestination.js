@@ -14,13 +14,15 @@ export default function Random() {
     return (
         <div>
             <Head >
+                <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"/>
                 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,700&display=swap" rel="stylesheet"/>
+                <link rel="shortcut icon" href="/favicon.ico"/>
             </Head>
             <Title />
             <StaticGlobe />
             <div className="randomButtons">
-                <button onClick={() => router.push("/randomDestination")}>Spin Again</button>
-                <button onClick={() => router.push("/destinations")}>Destinations</button>
+                <button className="randomButton" onClick={() => router.push("/randomDestination")}>Spin Again</button>
+                <button className="destinationButton" onClick={() => router.push("/destinations")}>Destinations</button>
             </div>
             <Footer />
         </div>
