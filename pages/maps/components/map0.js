@@ -56,6 +56,9 @@ class Map extends Component {
   render() {
     return (
       <div>
+        <head>
+          <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,700&display=swap" rel="stylesheet"/>
+        </head>
         <div>
         </div>
         <ReactMapGL

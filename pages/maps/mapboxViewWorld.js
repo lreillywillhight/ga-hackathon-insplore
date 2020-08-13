@@ -16,17 +16,26 @@ export default function MapboxViewWorld() {
   const router = useRouter()
 
   return (
-    <div>
-      <Title />
-      <span onClick={() => router.push('/')}>Return to home page</span>
-      <h1>HELLO MAPBOX</h1>
-      <div className="map-body">
-        <Map0 />
-        <MapSidebar />
+    <html>
+      <head>
+        <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+      </head>
+      <div>
+        <div className="homeButton">
+          <span onClick={() => router.push('/')}>Return to home page</span>
+        </div>
+        <Title />
+        <div className="map-body">
+          <Map0 />
+          <MapSidebar />
+        </div>
+        <footer>
+        <div className="homeButton">
+          <span onClick={() => router.push('/')}>Return to home page</span>
+        </div>
+        </footer>
       </div>
-      <footer>
-        <span onClick={() => router.push('/')}>Return to home page</span>
-      </footer>
-    </div>
+    </html>
   )
 }
