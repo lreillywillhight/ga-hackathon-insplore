@@ -3,8 +3,6 @@ import { Component, PureComponent } from 'react'
 import ReactMapGL, { Marker } from 'react-map-gl'
 
 
-
-//react-map=gl is a module that I didn't have time to fiddle with converting from class library
 class Map extends Component {
   state = {
     viewport: {
