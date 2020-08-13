@@ -27,13 +27,19 @@ const places = [{
 ]
 
 
-
-
 class Map extends Component {
 
   setSelectedMarker = (object) => {
-    console.log(object)
+    this.setState({
+      selectedMarker: object
+    })
   };
+
+  closePopup = () => {
+    this.setState({
+      selectedHotspot: null
+    })
+  }
 
   state = {
     viewport: {
@@ -43,7 +49,7 @@ class Map extends Component {
       longitude: -77.06,
       zoom: 11
     },
-    selectedMarker: {}
+    selectedMarker: null
   };
  
   render() {
@@ -61,8 +67,16 @@ class Map extends Component {
             {
             Object.keys(places).map((p, i) => {
               console.log(places[p].name);
-              return <div key={i} id={places[p].name} className="MarkerDiv" onClick={(e) => {this.setSelectedMarker(e)}}>
-                {console.log(this.state.selectedMarker[p])}
+              return <div key={i} id={places[p].name} className="MarkerDiv" onClick={(e) => {this.setSelectedMarker(places[p])}}>
+                {this.state.selectedMarker !== null ? (
+                  <Popup
+                    latitude={this.state.selectedMarker.lat} 
+                    longitude={this.state.selectedMarker.lon}
+                    onClose={this.closePopip}
+                    ><p>INFORMATION GOES HERE</p></Popup>
+                    ) : 
+                    null
+                    }
                 <Marker latitude={places[p].lat} longitude={places[p].lon}>{places[p].name}</Marker>
               </div>
             })
