@@ -3,17 +3,17 @@ import Link from 'next/link'
 
 export default function Title() {
     return (
-        <div>
+        <div className='header'>
             <Head>
                 <title>Insplore</title>
             </Head>
-            <navbar>
+            <div>
                 <Link href="/">
-                    <a id='index'>
-                        <h1>Insplore</h1>
+                    <a  className="title">
+                        <img className="logo" src='logo-working-white.png'></img>
                     </a>
                 </Link>
-            </navbar>
+            </div>
         </div>        
     )
 }
