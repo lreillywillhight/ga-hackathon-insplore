@@ -5,17 +5,22 @@ import TestCities from './maps/components/testCities.js'
 
 
 import Title from '../components/title'
+import { useRouter } from 'next/router'
 
 export default function Home() {
-
+  const router = useRouter()
 
 
   return(
     <div>
       <Title />
       <div>
+
         {console.log(TestCities)}
         <h1>INSPLORE </h1>
+        {console.log(process.env.GREETING)}
+        <button onClick={() => router.push("/destinations")}>Destinations</button>
+        <button onClick={() => router.push("/randomDestination")}>Spin the Globe</button>
       </div>
       <div>
         <footer>
