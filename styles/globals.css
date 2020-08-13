@@ -20,21 +20,67 @@ a {
   box-sizing: border-box;
 }
 
-button {
-  /* position: absolute; */
-  width: 250px;
-  height: 70px;
-  left: 348px;
-  top: 794px;
-  font-family: 'Raleway', sans-serif;
+.destinationButton {
+  position: relative;
+  width: 224px;
+  height: 76px;
+
+  background: #5879EF;
+  box-shadow: -5.46791px -5.46791px 16.4037px #6889FD, 5.46791px 5.46791px 16.4037px #4E66BA;
+  border-radius: 109.358px;
+  border: 0;
+
+  /* position: absolute;
+  left: 16.07%;
+  right: 15.63%;
+  top: 30.26%;
+  bottom: 31.58%; */
+
+  font-family: Raleway;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 21px;
-  /* display: flex; */
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
   text-align: center;
-  color: #000000;
+
+  color: #EEEEEE;
+}
+
+.randomButton {
+  width: 224px;
+  height: 76px;
+
+
+  background: #58A0EF;
+  box-shadow: -5.46791px -5.46791px 16.4037px #54B0EF, 5.46791px 5.46791px 16.4037px #4E66BA;
+  border-radius: 109.358px;
+  border: 0;
+
+
+
+  /* Spin the Globe */
+
+
+  /* position: absolute;
+  left: 16.07%;
+  right: 15.62%;
+  top: 30.26%;
+  bottom: 31.58%; */
+
+  /* Button Text */
+
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  /* display: flex;
+  align-items: center; */
+  text-align: center;
+
+  color: #EEEEEE;
 }
 
 /* --------------- HEADER ----------------- */
@@ -43,6 +89,8 @@ button {
   justify-content: center;
   width: 100vw;
   margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .title {
@@ -64,6 +112,7 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-top: 98px;
 }
 
 /* ----------------- RANDOM ---------------- */
@@ -87,7 +136,7 @@ button {
 }
 
 .destinationCard {
-  border: .25px solid rgb(109, 109, 109);
+  border: 1px solid #C5C5C5;
 }
 
 .xDiv {
@@ -120,7 +169,6 @@ button {
   /* margin-bottom: 0em; */
   margin-right: 2em;
   margin-bottom: -4.5em;
-  border-radius: 1em;
   line-height: 1em;
   background: #6872F1;
   border: 0em;
@@ -135,20 +183,19 @@ button {
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 21px;
 }
 
 .city {
   margin-top: .4em;
   margin-bottom: .4em;
-
+  font-family: 'Raleway', sans-serif;
 }
 
 .country {
   margin-top: -1em;
   margin-bottom: .4em;
   margin-left: 1.25em;
+  font-family: 'Raleway', sans-serif;
 }
 
 .pics {
@@ -158,6 +205,14 @@ button {
 
 /* ----------- Spinning Globe ----------- */
 .globeDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 145px;
+  margin-bottom: 25px;
+  margin-left: -10px;
+}
+
+.staticGlobeDiv {
   display: flex;
   justify-content: center;
   margin-top: 50px;
@@ -179,7 +234,8 @@ button {
   margin-bottom: 16px;
   height: 200px; /* Unscaled is 200px. If 'globe__container' is scaled, multiply this value by scale() property, e.g. 200px * 0.5 = 100px */
   width:  200px; /* Unscaled is 200px. If 'globe__container' is scaled, multiply this value by scale() property, e.g. 200px * 0.5 = 100px */
-  transform: scale(2,2)
+  transform: scale(1.97,1.97);
+
 }
 
 .globe__container {
@@ -709,10 +765,6 @@ width: 180px;
   .container{padding-left: 0px;}
 }
 
-
-
-
-
 .mapboxgl-marker {
   margin-left: -115px;
   border-radius: 50% 50% 50% 0;
@@ -736,4 +788,37 @@ h3 {
   font-family: 'Raleway', sans-serif;
   text-align: center;
   color: rgb(83, 61, 230)
+}
+
+/* .modal {
+  max-width: none;
+}
+
+.modal-dialog {
+  max-width: none;
+}
+
+
+.sidebar-whole {
+  position: absolute;
+  left: 0;
+  top: 50;
+  z-index: 100;
+  direction: ltr;
+} */
+
+.sidebar {
+  /* width: 45vw;
+  z-index: 9;
+  position: absolute;
+  left: 0;
+  top: 50; */
+  width: 45vw;
+  z-index: 100;
+  position: absolute;
+  left: 0;
+  top: 337px;
+  background: hotpink;
+  /* direction: rtl; */
+
 }
