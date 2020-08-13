@@ -73,15 +73,16 @@ class Map extends Component {
                   <Popup
                     latitude={this.state.selectedMarker.lat} 
                     longitude={this.state.selectedMarker.lon}
+                    closeButton={false}
                     onClose={this.closePopup}
                     closeOnClick={true}
                     anchor="bottom"
                     offsetLeft={-88}
-                    ><p>{this.state.selectedMarker.info !== undefined ? this.state.selectedMarker.info : this.state.selectedMarker.name}</p></Popup>
+                    ><h3>{this.state.selectedMarker.name}</h3></Popup>
                     ) : 
                     null
                     }
-                <Marker latitude={places[p].lat} longitude={places[p].lon}>{places[p].name}</Marker>
+                <Marker latitude={places[p].lat} longitude={places[p].lon}></Marker>
               </div>
             })
           }
