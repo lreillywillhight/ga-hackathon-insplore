@@ -43,6 +43,8 @@ button {
   justify-content: center;
   width: 100vw;
   margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .title {
@@ -62,6 +64,7 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-top: 98px;
 }
 
 /* ----------------- RANDOM ---------------- */
@@ -85,7 +88,7 @@ button {
 }
 
 .destinationCard {
-  border: .25px solid rgb(109, 109, 109);
+  border: 1px solid #C5C5C5;
 }
 
 .xDiv {
@@ -158,6 +161,14 @@ button {
 .globeDiv {
   display: flex;
   justify-content: center;
+  margin-top: 145px;
+  margin-bottom: 25px;
+  margin-left: -10px;
+}
+
+.staticGlobeDiv {
+  display: flex;
+  justify-content: center;
   margin-top: 50px;
   margin-bottom: 25px;
 }
@@ -177,6 +188,7 @@ button {
   margin-bottom: 16px;
   height: 200px; /* Unscaled is 200px. If 'globe__container' is scaled, multiply this value by scale() property, e.g. 200px * 0.5 = 100px */
   width:  200px; /* Unscaled is 200px. If 'globe__container' is scaled, multiply this value by scale() property, e.g. 200px * 0.5 = 100px */
+  transform: scale(1.99,1.99);
 }
 
 .globe__container {
@@ -725,3 +737,4 @@ width: 180px;
   height: 25px;
   transform: rotate(-45deg);
 }
+
