@@ -103,7 +103,6 @@ class Map extends Component {
             })
           }
           </div>
-         
         </ReactMapGL>
       </div>
     );

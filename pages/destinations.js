@@ -6,6 +6,7 @@ import { Card, ListGroup, Button } from 'react-bootstrap'
 
 
 import Title from '../components/title'
+import Footer from '../components/footer'
 import Globe from '../components/globe'
 import { useRouter } from 'next/router'
 
@@ -82,6 +83,7 @@ export default function Home() {
                 <button onClick={() => router.push("/randomDestination")}>Randomize</button>
                 <button onClick={() => router.push("/destinations")}>Destinations</button>
             </div> */}
+            <Footer />
         </div>
     )
 }

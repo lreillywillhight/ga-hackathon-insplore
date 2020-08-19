@@ -1,8 +1,10 @@
 import React from 'react'
+import Head from 'next/head'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import { useRouter } from 'next/router'
 import Title from '../components/title'
+import Footer from '../components/footer'
 import MapSidebar from './maps/components/map-sidebar'
 
 const Map0 = dynamic(() => import('./maps/components/map0'), {

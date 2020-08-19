@@ -787,7 +787,18 @@ width: 180px;
 h3 {
   font-family: 'Raleway', sans-serif;
   text-align: center;
-  color: rgb(83, 61, 230)
+  color: #EEEEEE;
+}
+
+footer {
+  position: fixed;
+  font-family: 'Raleway', sans-serif;
+  color: #EEEEEE;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1em;
 }
 
 .markerDisplay {
@@ -820,6 +831,19 @@ h3 {
 } */
 
 .sidebar {
+  /* width: 45vw;
+  z-index: 9;
+  position: absolute;
+  left: 0;
+  top: 50; */
+  /* width: 45vw;
+  width: 35vw;
+  z-index: 100;
+  position: absolute;
+  left: 0;
+  top: 337px;
+  background: hotpink; */
+  /* direction: rtl; */
   width: 35vw;
   z-index: 100;
   position: absolute;
